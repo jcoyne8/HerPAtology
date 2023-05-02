@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/logo_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="217dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="100dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Encyclopedia"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="217dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="100dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Take the Quiz"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="217dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="300dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Region Select"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

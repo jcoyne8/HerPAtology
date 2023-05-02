@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegionFragment">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="@font/kavivanar"
+        android:text="Select Your Region"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="400dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Northeastern PA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="200dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Northwestern PA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Central PA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fourth"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Southeastern PA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fifth"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="400dp"
+        android:background="#15732C"
+        android:backgroundTint="#15732C"
+        android:fontFamily="@font/rokkitt"
+        android:text="Southwestern PA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

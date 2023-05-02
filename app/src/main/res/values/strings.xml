@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HerPAtology</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="quiz_question_1">Did the snake have a solid pattern?</string>
+    <string name="quiz_question_2">Did the snake have a triangular head?</string>
+    <string name="quiz_question_3">Was the snake brightly colored?</string>
+    <string name="quiz_question_4">Did the snake have any lengthwise stripes?</string>
+    <string name="quiz_question_5">Did you notice a rattle on the tail?</string>
+    <string name="quiz_question_6">Was the snake black in coloration?</string>
+    <string name="quiz_question_7">Was the snake thinner than a typical snake?</string>
+    <string name="quiz_question_8">Was the length approximately human height?</string>
+    <string name="quiz_question_9">Was the snake swimming?</string>
+    <string name="quiz_question_10">Was the snake on the ground?</string>
+    <string name="quiz_question_11">Did you see the snake in a county bordering Ohio?</string>
+    <string name="quiz_question_12">Did you see the snake in a county bordering New Jersey?</string>
+    <string name="quiz_question_13">Did you see the snake in a county bordering New York?</string>
+    <string name="quiz_question_14">Did you see the snake in a county bordering Maryland?</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/encyclopediaFragment"
+        android:name="com.jcoynemobile.herpatology.EncyclopediaFragment"
+        android:label="Encyclopedia"
+        tools:layout="@layout/fragment_encyclopedia">
+
+        <action
+            android:id="@+id/action_encyclopediaFragment_to_speciesFragment"
+            app:destination="@id/speciesFragment" />
+        <argument
+            android:name="listType"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="encyclopediaName"
+            app:argType="string"
+            android:defaultValue="Encyclopedia" />
+    </fragment>
+    <fragment
+        android:id="@+id/speciesFragment"
+        android:name="com.jcoynemobile.herpatology.SpeciesFragment"
+        android:label="Species"
+        tools:layout="@layout/fragment_species">
+
+        <argument
+            android:name="speciesIndex"
+            app:argType="integer" />
+        <argument
+            android:name="imageResourceId"
+            app:argType="integer" />
+        <argument
+            android:name="speciesName"
+            app:argType="string"/>
+        <argument
+            android:name="scienceName"
+            app:argType="string"/>
+        <argument
+            android:name="venomous"
+            app:argType="string"/>
+        <argument
+            android:name="habitat"
+            app:argType="string"/>
+        <argument
+            android:name="length"
+            app:argType="string"/>
+        <argument
+            android:name="speciesRange"
+            app:argType="string"/>
+        <argument
+            android:name="coloration"
+            app:argType="string"/>
+        <argument
+            android:name="notes"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jcoynemobile.herpatology.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_encyclopediaFragment"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="0" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Encyclopedia" />
+        </action>
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_regionFragment"
+            app:destination="@id/regionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.jcoynemobile.herpatology.QuizFragment"
+        android:label="Question 1"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_speciesFragment"
+            app:destination="@id/speciesFragment" >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/regionFragment"
+        android:name="com.jcoynemobile.herpatology.RegionFragment"
+        android:label="Regions"
+        tools:layout="@layout/fragment_region" >
+        <action
+            android:id="@+id/action_regionFragment_to_encyclopediaFragment_ne"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="1" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Northeast PA" />
+        </action>
+        <action
+            android:id="@+id/action_regionFragment_to_encyclopediaFragment_nw"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="2" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Northwest PA" />
+        </action>
+        <action
+            android:id="@+id/action_regionFragment_to_encyclopediaFragment_c"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="5" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Central PA" />
+        </action>
+        <action
+            android:id="@+id/action_regionFragment_to_encyclopediaFragment_se"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="3" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Southeast PA" />
+        </action>
+        <action
+            android:id="@+id/action_regionFragment_to_encyclopediaFragment_sw"
+            app:destination="@id/encyclopediaFragment" >
+            <argument
+                android:name="listType"
+                android:defaultValue="4" />
+            <argument
+                android:name="encyclopediaName"
+                android:defaultValue="Southwest PA" />
+        </action>
+    </fragment>
+</navigation>
