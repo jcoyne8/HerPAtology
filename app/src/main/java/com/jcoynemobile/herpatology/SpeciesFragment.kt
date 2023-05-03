@@ -1,5 +1,6 @@
 package com.jcoynemobile.herpatology
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -82,6 +83,10 @@ class SpeciesFragment : Fragment() {
         rangeView.setText(speciesRange)
         colorView.setText(coloration)
         notesView.setText(notes)
+
+        if (venomous == "Venomous") {
+            venomView.setTextColor(Color.parseColor("#E6070F"))
+        }
 
 
         notesView.doOnTextChanged { text, _, _, _ ->
